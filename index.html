@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="./assets/js/cards.js">
+    </script>
+</head>
+
+<body>
+    <!-- nav start -->
+    <nav class="flex container navbar">
+        <div class="flex navbar__main_buttons">
+            <div class="navbar__main_buttons__logo"><a href="">Start Bootstrap</a></div>
+            <div class="navbar__main_buttons__ul" id="navbar_ul">
+                <ul class="flex">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li class="ul__shop_button"><button onclick="open_shop_menu()">Shop <i
+                                class="fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown_menu" id="dropdown_menu">
+                            <ul>
+                                <li class="first_list"><a href="">All Products</a></li>
+                                <hr>
+                                <li><a href="">Popular Items</a></li>
+                                <li><a href="">New Arrivals</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__cart_button" id="cart_button">
+                <button class="flex">Cart <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="number_div">
+                        <span id="number">0</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="navbar__toggle_menu" onclick="open_ul_items_and_cart_button()">
+            <button><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- header start -->
+    <header>
+        <section class="flex container header_section">
+            <h1 class="header">Shop in style</h1>
+            <p class="content">With this shop hompeage template</p>
+        </section>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+        <section id="cards_container" class="container main__product_cards">
+            <!-- <div class="card_item">
+                <div class="card_picture">
+                    <img id="card_img" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="">
+                </div>
+                <h2 class="card_header" id="card_name">Special Item</h2>
+                <p>123</p>
+                <p>123</p>
+                <button onclick="add_cart()">Add to cart</button>
+            </div> -->
+            
+        </section>
+        <div class="pagination_div">
+            <button id="left" class="pagination_btn"><</button>
+            <button id="right" class="pagination_btn">></button>
+        </div>
+        
+    </main>
+    <!-- main start -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="container">
+            Copyright © Your Website 2023
+            <a class="admin_link" href="./AdminHomePage.html">Admin Page</a>
+        </div>
+        
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
